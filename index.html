@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Assignment Three - Canvas & SVG</title>
+<link href="css/main.css" rel="stylesheet">
+</head>
+<div class="container">
+
+<body>
+<header>
+  
+  <h1>Understanding </br>Your Electricity Bill</h1>
+  <!-- STEP ONE -- LIGHTBULB ICON CREATION 
+
+  Using a Vector Graphics Drawing program such as Illustrator, create the lighbulb icon as a vector graphic for your website. When saving your image, choose the SVG format. 
+
+  If you don't have access to Illustrator : 
+
+  https://www.techradar.com/news/the-best-free-adobe-illustrator-alternatives
+
+  https://www.adobe.com/products/illustrator.html
+
+  -->
+  <object type="image/svg+xml" data="img/bulb.svg" class="bulb"></object>
+
+</header>
+<section class="one">
+ <!--- STEP TWO - adding missing icon here - you can either generate it using Illustrator or programmatically -- your choice!-->
+ <object type="image/svg+xml" data="img/icon-white.svg" class="iconWhite"></object>
+ <h1>Be an Informed Energy Consumer.</h1>
+ <h2>We Can Help.</h2>
+
+
+
+ <p>For information on a range of topics visit</p> 
+ <ul>
+   <li>
+     <a href="OntarioEnergyBoard.ca/Consumers"><strong>OntarioEnergyBoard.ca/Consumers</strong></a>
+   </li>
+   <li>
+     Contact <span>Consumer Relations</span></br>
+     <small>(open Monday to Friday, 8:30 a.m. to 5 p.m.)</small></br>
+     <a href="tel:18776322727"><strong>1-877-632-2727</strong> <small>(toll-free within Ontario)</small></a></br>
+     <a href="tel:14163142455"><strong>1-416-314-2455</strong> <small>(within Greater Toronto Area or from outside Canada)</small></a>
+   </li>
+   <li>
+     <a href="mailto:ConsumerRelations@OntarioEnergyBoard.ca"><strong>ConsumerRelations@OntarioEnergyBoard.ca</strong></a></Contact>
+   </li>
+   <li><img src="img/twitter.svg" class="twitter"><strong>@OntEnergyBoard</strong></li>
+ </ul>
+ <p><small>
+  The Ontario Energy Board is an independent and impartial public regulatory agency. We make decisions that serve the public interest. Our goal is to promote a viable, sustainable and efficient energy sector that provides you with reliable energy services that are cost effective.</small></p>
+  <p><small>Ce document est aussi disponible en français. Visit our website or contact <span>Consumer Relations.</span></small>
+ </p> 
+  
+</section>
+<main>
+  <section class="two">
+   <!-- STEP THREE -- we need that icon here too! -->
+   <object type="image/svg+xml" data="img/icon-orange.svg" class="iconOrangef"></object>
+    <h2>Time-of-Use Electricity Prices</h2>
+    <p>Households and small businesses in Ontario pay time-of-use prices for electricity that change according to the <span>Time of Day</span> and <span>day of the week</span>.The peak periods also change by <span>season</span>.</p><p>Your smart meter tells your utility exactly how much power you use and when you use it. With this information, your utility charges you for the amount of power you use at off-peak, mid-peak and on-peak times.</p>  
+    <h3> Reasons for Different Prices</h3>
+    <p><span>When Demand is Low</span>
+     and fewer people are using power, lower-cost electricity is available from sources like nuclear and large hydroelectric systems.
+    </p>
+     <p><span>When demand rises</span>
+        during the day, the province’s supply of lower-cost electricity is used up, and more expensive sources need to be used. 
+    </p>
+  </section>
+  
+  <section class="three">
+   <!-- this section should show the circle graphs explaining peak hours -->
+    <!-- STEP FOUR create this section using SVGs - the first two can be vectors, but create the last circle graph programmatically - a few hints, you can create text and curves with SVG and can also write on a curve. https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial will be a big help -->
+    <object type="image/svg+xml" data="img/pie1.svg" class="weekdays"></object>
+    <object type="image/svg+xml" data="img/pie2.svg" class="weekdays"></object>
+    <object type="image/svg+xml" data="img/pie3.svg" class="weekends"></object>
+
+  </section>
+    
+  <section class="graph">
+   <!-- let's put that icon here too -->
+   <h2> Your Electricity Use  </h2>
+   <!-- STEP FIVE - using <canvas>, create a line graph showing electricity consumption over a weekly period-->
+  <canvas id="usageChart" width="750"></canvas>
+
+  </section>
+</main>
+<footer>
+  &copy; 2019 - COMP2081 Assign Three
+</footer>
+<!-- <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="anonymous"></script>
+<script src="js/chart.js"></script>
+</body>
+</div>
+
+</html>

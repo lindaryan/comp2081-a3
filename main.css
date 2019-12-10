@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap');
+
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: "arial narrow";
+    font-size: 12px;
+    min-width: 550px;
+    max-width: 900px;
+    background-color: black;
+}
+header {
+	/*create  grid*/
+	display: grid;
+	grid-template-columns: 75%, 25%;
+	justify-content: space-between;
+	align-content: center;
+    font-family: "Open Sans Condensed";
+    line-height: 1;
+    letter-spacing: 0.001em;
+}
+header {
+    font-size: 2.5em;
+}
+header h1 {
+    grid-column: 1 / 2;
+}
+header object {
+    grid-column: 2 / 3;
+   } 
+header, h1, .one {
+    margin: 0;
+}
+header h1 {
+    padding: 0 0 0 15px;
+
+}
+.one h1, .one h2 {
+    font-size: 2.7em;
+    line-height: 1.1;
+
+}
+.one {
+    display: grid;
+    grid-template-columns: min-content auto;
+    justify-content: left;
+    overflow: visible;
+}
+.one object {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    padding: 0 15px;
+    height: 100%;
+}
+.one h1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 1;
+}
+.one h2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin: 0;
+}
+
+
+.one p {
+    grid-column: 2/3;
+    margin: 15px 0 0 0;
+}
+body > div > section > p:nth-child(6) {
+    grid-column: 1/3;
+    grid-row: 5/6;
+    font-size: 1.2em;
+    line-height: 1.1;
+    margin-top: 5px;
+    padding: 0 15px;
+}
+body > div > section > p:nth-child(7) {
+    grid-column: 1/3;
+    grid-row: 6/7;
+    font-style: italic;
+    font-size: 1.2em;
+    padding: 0 15px;
+}
+body > div > section > p:nth-child(7) > small > span {
+    text-transform: none;
+    font-weight: normal;
+    font-style: normal;
+}
+ul {
+    grid-column: 2/3;
+    padding-left: 0;
+    margin-top: 0; 
+}
+ul, .one p {
+    line-height: 1.3;
+    font-size: 1.1em;
+}
+ul li:nth-of-type(3), li:nth-of-type(1) {
+    margin-bottom: 15px;
+}
+header, .one, .two, .three, .graph {
+    padding: 25px 25px;
+}
+.one {
+    padding-bottom: 10px;
+}
+.two {
+    display: grid;
+    grid-template-columns: min-content auto;
+    justify-content: left;
+    overflow: visible;
+    font-size: 1.3em;
+}
+.two object {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    padding: 0 15px;
+    height: 175%;
+}
+.two h2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    margin: 0;
+    font-size: 2.5em;
+}
+body > div > main > section.two > p:nth-child(3) {
+    grid-column: 2/3;
+    grid-row: 5/7;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+body > div > main > section.two > p:nth-child(4) {
+    grid-column: 2/3;
+    grid-row: 7/9;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.two h3 {
+    grid-column:2 / 3;
+    grid-row: 9/10;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+body > div > main > section.two > p:nth-child(6){
+    grid-column: 2/3;
+    grid-row: 10/12;
+    margin: 15px 0 0 0;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+body > div > main > section.two > p:nth-child(7) {
+    grid-column: 2/3;
+    grid-row: 12/14;
+ 
+}
+
+
+main {
+    background-color: #fff;
+}
+header, h1, .one {
+    background-color: #F3664A;
+    color: #fff;
+}
+h3 {
+    color: #F3664a;
+}
+.two {
+    background-color: #fff;
+    color: #848381;
+}
+.three {
+    background-color: #FFEFEF;
+    color: #848381;
+}
+.graph {
+    background-color: #fff;
+    color: #848381;
+}
+
+
+ul li {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.2em;
+}
+span, h1, h2, h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+/* SVGS */
+.iconWhite, .iconOrange {
+    height: 4em;
+    width: 4em;
+}
+.bulb {
+    height: 3.5em;
+    width: 3.5em;
+    opacity: 65%;
+    padding: 15px;
+}
+.twitter {
+    padding: 0;
+    height: 1.2em;
+}
+.weekdays {
+    height: 25em;
+}
+.weekends {
+    height: 25em;
+}
